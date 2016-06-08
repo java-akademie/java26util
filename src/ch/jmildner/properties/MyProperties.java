@@ -10,7 +10,7 @@ public class MyProperties
 {
 	static MyProperties getInstance() throws IOException
 	{
-		return getInstance("/resources/config.properties");
+		return getInstance("/config.properties");
 	}
 
 

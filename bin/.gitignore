@@ -1,6 +1,6 @@
-/MyProperties.class
-/PropertiesMangager.class
-/Test2.class
-/TestProperties.class
-/TestResources.class
+/config.properties
+/config2gen.properties
+/config2gen.xml
+/config_CH.properties
 /ch/
+/.DS_Store

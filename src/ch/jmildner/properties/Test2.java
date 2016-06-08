@@ -60,7 +60,7 @@ public class Test2
 		// selbsterstellt
 		Properties props = new Properties();
 		props.load(Thread.currentThread().getClass()
-				.getResourceAsStream("/resources/config.properties"));
+				.getResourceAsStream("/config.properties"));
 		for (Enumeration<?> e = props.propertyNames(); e
 				.hasMoreElements();)
 		{
@@ -76,16 +76,16 @@ public class Test2
 
 	private static void testProperties2() throws IOException
 	{
-		MyTools.uebOut("testProperties2()", 3);
+		MyTools.uebOut("testProperties2() ...", 3);
 		Properties props = new Properties();
 		props.load(Thread.currentThread().getClass()
-				.getResourceAsStream("/resources/config.properties"));
+				.getResourceAsStream("/config.properties"));
 		props.list(System.out);
-		FileWriter w = new FileWriter("properties/resources/config2gen.properties");
-		props.store(w, "generiert aus /resources/config.properties");
+		FileWriter w = new FileWriter("resources/config2gen.properties");
+		props.store(w, "generiert aus /config.properties");
 		w.close();
-		OutputStream s = new FileOutputStream("properties/resources/config2gen.xml");
-		props.storeToXML(s, "generiert aus /resources/config.properties");
+		OutputStream s = new FileOutputStream("resources/config2gen.xml");
+		props.storeToXML(s, "generiert aus /config.properties");
 		s.close();
 
 	}
