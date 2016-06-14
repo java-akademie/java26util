@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-<properties>
-<comment>generiert aus /config.properties</comment>
-<entry key="test.ueberschrift">test resources</entry>
-<entry key="minimum">815</entry>
-<entry key="maximum">4711</entry>
-</properties>
