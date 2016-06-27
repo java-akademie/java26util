@@ -7,6 +7,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/_mytools16-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/_mytools16-3.0.jar" sourcepath="lib/_mytools16-3.0.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

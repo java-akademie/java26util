@@ -12,6 +12,8 @@ public class TestCollections
 
 	public static void main(String[] args)
 	{
+		StoppUhr u = new StoppUhr();
+		u.start("main");
 
 		Map<Integer, String> map = new TreeMap<Integer, String>();
 		map.put(1, "hugo");
@@ -24,6 +26,7 @@ public class TestCollections
 		map.put(8, "fritz");
 		map.put(9, "fritz");
 		map.put(10, "fritz");
+		u.getZwischenzeit();
 
 		Set<Entry<Integer, String>> entrySet = map.entrySet();
 
@@ -31,9 +34,11 @@ public class TestCollections
 
 		for (Entry<Integer, String> e : entrySet)
 		{
-			//System.out.printf("%s=%s %n", e.getKey(), e.getValue());
+			 System.out.printf("%s=%s %n", e.getKey(), e.getValue());
 			zeitTest(e);
 		}
+		u.getGesamtzeit();
+		u.delete();
 
 	}
 
@@ -41,23 +46,14 @@ public class TestCollections
 	private static void zeitTest(Entry<Integer, String> e)
 	{
 
-		if (e.getKey() %2==0)
-		{
 			StoppUhr u = new StoppUhr();
+			u.start("");
 			for (int i = 1; i <= 1100000; i++)
 			{
 				String.format("%s", e.getKey());
 			}
-			u.getDauer();
-		}
-		else
-		{
-			StoppUhr u = new StoppUhr();
-			for (int i = 1; i <= 1100000; i++)
-			{
-				String.format("%d", e.getKey());
-			}
-			u.getDauer();
-		}
+			u.getGesamtzeit();
+			u.delete();
+
 	}
 }
