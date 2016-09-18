@@ -16,13 +16,13 @@ public class Test2
 
 	public static void main(String[] args) throws IOException
 	{
-		testLocale();
+		//testLocale();
 		testProperties1();
 		testProperties2();
 	}
 
 
-	private static void testLocale()
+	 static void testLocale()
 	{
 		// Vorhandene Locale: US, UK, GERMANY, GERMAN (nur Sprache)
 		// FRENCH, FRANCE (nur Sprache), ITALY, ITALIAN (nur Sprache)
@@ -57,6 +57,7 @@ public class Test2
 
 	private static void testProperties1() throws IOException
 	{
+		MyTools.uebOut("testProperties1() ...", 3);
 		// selbsterstellt
 		Properties props = new Properties();
 		props.load(Thread.currentThread().getClass()

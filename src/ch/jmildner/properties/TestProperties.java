@@ -18,8 +18,8 @@ public class TestProperties
 		MyProperties ts1, ts2, ts3;
 		try
 		{
-			ts1 = PropertiesMangager.getInstance("a",
-					"/resources/log4j.properties");
+			ts1 = PropertiesMangager.getInstance("minimum",
+					"/resources/config.properties");
 			System.out.println(ts1.getProperties());
 		}
 		catch (Exception e)
