@@ -27,7 +27,7 @@ public class SortierenVonListen
 
 		System.out.println(names.toString());
 
-		Collections.sort(names, (s1, s2) -> (s2.compareTo(s1)));
+		Collections.sort(names, (s1, s2) -> (s1.compareTo(s2)));
 
 		System.out.println(names.toString());
 
@@ -48,6 +48,10 @@ public class SortierenVonListen
 
 		System.out.println(personen.toString());
 		
+		Collections.sort(personen, (p1,p2)->(p1.getName().compareTo(p2.getName())));
+
+		System.out.println(personen.toString());
+		
 		Collections.sort(personen, (p2,p1)->(p1.getName().compareTo(p2.getName())));
 
 		System.out.println(personen.toString());
@@ -56,5 +60,6 @@ public class SortierenVonListen
 
 		System.out.println(personen.toString());
 
+	
 	}
 }
