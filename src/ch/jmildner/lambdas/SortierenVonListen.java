@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import ch.java_akademie.tools.MyTools;
+
 public class SortierenVonListen
 {
 
@@ -17,6 +19,8 @@ public class SortierenVonListen
 
 	static void test1()
 	{
+		MyTools.uebOut("Test1",2);
+		
 		final List<String> names = Arrays.asList("michael", "max", "stefan", "andy");
 
 		Collections.sort(names);
@@ -36,6 +40,8 @@ public class SortierenVonListen
 
 	static void test2()
 	{
+		MyTools.uebOut("Test2",2);
+		
 		List<Person> personen= new ArrayList<Person>();
 
 		personen.add(new Person(3, "michael"));
