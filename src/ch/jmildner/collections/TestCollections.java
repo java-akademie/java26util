@@ -45,7 +45,6 @@ public class TestCollections
 
 	private static void zeitTest(Entry<Integer, String> e)
 	{
-
 			StoppUhr u = new StoppUhr();
 			u.start("");
 			for (int i = 1; i <= 1100000; i++)
@@ -54,6 +53,5 @@ public class TestCollections
 			}
 			u.getGesamtzeit();
 			u.delete();
-
 	}
 }

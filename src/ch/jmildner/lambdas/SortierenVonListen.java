@@ -31,7 +31,7 @@ public class SortierenVonListen
 
 		System.out.println(names.toString());
 
-		Collections.sort(names, (s1, s2) -> (s1.compareTo(s2)));
+		Collections.sort(names, (s2, s1) -> (s1.compareTo(s2)));
 
 		System.out.println(names.toString());
 
