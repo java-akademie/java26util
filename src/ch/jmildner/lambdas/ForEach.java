@@ -11,6 +11,7 @@ public class ForEach
 
 	public static void main(String[] args)
 	{
+		
 		List<Integer> l = new ArrayList<Integer>();
 		
 		for (int i = 1; i <= 100; i++)
