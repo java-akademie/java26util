@@ -34,7 +34,7 @@ public class TestCollections
 
 		for (Entry<Integer, String> e : entrySet)
 		{
-			 System.out.printf("%s=%s %n", e.getKey(), e.getValue());
+			System.out.printf("%s=%s %n", e.getKey(), e.getValue());
 			zeitTest(e);
 		}
 		u.getGesamtzeit();
@@ -45,13 +45,15 @@ public class TestCollections
 
 	private static void zeitTest(Entry<Integer, String> e)
 	{
-			StoppUhr u = new StoppUhr();
-			u.start("");
-			for (int i = 1; i <= 1100000; i++)
-			{
-				String.format("%s", e.getKey());
-			}
-			u.getGesamtzeit();
-			u.delete();
+		StoppUhr u = new StoppUhr();
+		u.start("");
+		for (int i = 1; i <= 1100000; i++)
+		{
+			String.format("%s", e.getKey());
+		}
+		u.getGesamtzeit();
+		u.delete();
 	}
+
+
 }
