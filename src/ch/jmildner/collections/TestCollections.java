@@ -5,7 +5,7 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
-import ch.java_akademie.tools.StoppUhr;
+import ch.jmb.tools.StoppUhr;
 
 public class TestCollections
 {
