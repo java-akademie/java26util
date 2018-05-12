@@ -8,7 +8,7 @@ import java.util.Enumeration;
 import java.util.Locale;
 import java.util.Properties;
 
-import ch.jmb.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class Test2
 {

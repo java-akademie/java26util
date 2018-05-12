@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.Set;
 
-import ch.jmb.tools.MyTools;
+import ch.jmildner.tools.MyTools;
 
 public class TestResources
 {
