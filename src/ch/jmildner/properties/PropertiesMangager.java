@@ -9,15 +9,15 @@ public class PropertiesMangager
 
 
 	/**
-	 * Erzeugt beim ersten Mal eine Instanz der <default>
+	 * Erzeugt beim ersten Mal eine Instanz der (default)
 	 * Properties-Daten (@see MyProperties) und legt diese unter
-	 * <"default"> in der HashMap <properties> ab.<br>
+	 * "default" in der HashMap "properties" ab.
+         * <br>
 	 * Gibt es unter diesem Namen schon Properties-Daten, werden diese
 	 * geliefert.
-	 * 
-	 * @param configName
-	 * @return MyProperties
-	 * @throws IOException
+	 *
+	 * @return MyProperties myProperties
+	 * @throws IOException ioException
 	 */
 	public static MyProperties getInstance() throws IOException
 	{
@@ -26,15 +26,15 @@ public class PropertiesMangager
 
 
 	/**
-	 * Erzeugt beim ersten Mal eine Instanz der <default>
+	 * Erzeugt beim ersten Mal eine Instanz der "defaul"
 	 * Properties-Daten (@see MyProperties) und legt diese unter
-	 * <configName> in der HashMap <properties> ab.<br>
+	 * "configName" in der HashMap "properties" ab.<br>
 	 * Gibt es unter diesem Namen schon Properties-Daten, werden diese
 	 * geliefert.
 	 * 
-	 * @param configName
+	 * @param configName configName
 	 * @return MyProperties
-	 * @throws IOException
+	 * @throws IOException ioException
 	 */
 	public static MyProperties getInstance(String configName)
 			throws IOException
@@ -49,16 +49,16 @@ public class PropertiesMangager
 
 
 	/**
-	 * Erzeugt beim ersten Mal eine Instanz auf die in <configFile>
-	 * bezeichnete Properties-Daten und legt diese unter <configName> in
-	 * der HashMap <properties> ab.<br>
+	 * Erzeugt beim ersten Mal eine Instanz auf die in "configFile"
+	 * bezeichnete Properties-Daten und legt diese unter "configName" in
+	 * der HashMap "properties" ab.<br>
 	 * Gibt es unter diesem Namen schon Properties-Daten, werden diese
-	 * ungeachtet dem Inhalt von <configFile> geliefert.
+	 * ungeachtet dem Inhalt von "configFile" geliefert.
 	 * 
-	 * @param configName
-	 * @param configFile
+	 * @param configName configName
+	 * @param configFile configFile
 	 * @return MyProperties
-	 * @throws IOException
+	 * @throws IOException ioException
 	 */
 	public static MyProperties getInstance(String configName,
 			String configFile) throws IOException
